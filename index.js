@@ -9,7 +9,11 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin:['http://localhost:5173'],
+  origin:[
+    // 'http://localhost:5173',
+    'https://cars-doctor-9316a.web.app',
+    'https://cars-doctor-9316a.firebaseapp.com'
+],
   credentials: true
 }));
 app.use(cookieParser());
